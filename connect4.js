@@ -22,7 +22,7 @@ class Game {
   makeBoard() {
     this.board = [];
     for (let y = 0; y < this.HEIGHT; y++) {
-      board.push(Array.from({ length: this.WIDTH }));
+      this.board.push(Array.from({ length: this.WIDTH }));
     }
   }
 
@@ -156,6 +156,4 @@ function checkForWin() {
 }
 
 
-const conn4 = new Game;
-conn4.makeBoard();
-conn4.makeHtmlBoard();
+const conn4 = new Game(6, 7);
